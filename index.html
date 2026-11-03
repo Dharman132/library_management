@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Library Management System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;650;700&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Data Structures Lab · Symbiosis Institute of Technology, Hyderabad</p>
+      <h1>Library Management System</h1>
+      <p class="lede">Every action below runs on a different data structure. Watch the tree, hash table, queue and stack change on the right as you work.</p>
+    </div>
+    <div class="top-actions">
+      <button id="theme" class="btn ghost" type="button">Light / dark</button>
+      <button id="reset" class="btn ghost" type="button">Reset sample data</button>
+    </div>
+  </header>
+
+  <main class="grid">
+    <div class="ops">
+      <section class="card" aria-labelledby="h-desk">
+        <h2 id="h-desk">Issue desk</h2>
+        <p class="hint">Pick a member and a book, or click them in the tables. Issue and return use the linked list and stack, reserve uses the queue.</p>
+        <div class="desk">
+          <label for="d-member">Member<select id="d-member"></select></label>
+          <label for="d-book">Book<select id="d-book"></select></label>
+        </div>
+        <div class="btns">
+          <button class="btn primary" type="button" data-do="issue">Issue</button>
+          <button class="btn" type="button" data-do="return">Return</button>
+          <button class="btn" type="button" data-do="reserve">Reserve</button>
+          <button class="btn ghost" type="button" id="undo" data-do="undo">Undo last</button>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="h-cat">
+        <div class="card-head">
+          <h2 id="h-cat">Catalogue</h2>
+          <span id="count" class="dim"></span>
+        </div>
+        <div class="tools">
+          <label for="kw" class="grow">Search title or author<input id="kw" type="search" placeholder="e.g. struct" autocomplete="off"></label>
+          <label for="order">Order
+            <select id="order">
+              <option value="id">By ID (tree order)</option>
+              <option value="title">By title (merge sort)</option>
+            </select>
+          </label>
+        </div>
+        <form id="find" class="inline">
+          <label for="f-id">Find by ID in the tree<input id="f-id" type="number" min="1" placeholder="104" required></label>
+          <button class="btn" type="submit">Find</button>
+        </form>
+        <div class="scroll">
+          <table>
+            <thead><tr><th>ID</th><th>Title</th><th>Free</th><th>Wait</th><th><span class="vh">Remove</span></th></tr></thead>
+            <tbody id="books-body"></tbody>
+          </table>
+        </div>
+        <details>
+          <summary>Add a book</summary>
+          <form id="add-book" class="form-grid">
+            <label for="b-id">ID<input id="b-id" type="number" min="1" required></label>
+            <label for="b-copies">Copies<input id="b-copies" type="number" min="1" value="1" required></label>
+            <label for="b-title" class="wide">Title<input id="b-title" required maxlength="63"></label>
+            <label for="b-author" class="wide">Author<input id="b-author" maxlength="63"></label>
+            <button class="btn primary" type="submit">Add book</button>
+          </form>
+        </details>
+      </section>
+
+      <section class="card" aria-labelledby="h-mem">
+        <h2 id="h-mem">Members</h2>
+        <div class="scroll">
+          <table>
+            <thead><tr><th>ID</th><th>Name</th><th>Bucket</th><th>Books held (max 3)</th></tr></thead>
+            <tbody id="members-body"></tbody>
+          </table>
+        </div>
+        <details>
+          <summary>Register a member</summary>
+          <form id="add-member" class="form-grid">
+            <label for="m-id">ID<input id="m-id" type="number" min="1" required></label>
+            <label for="m-name">Name<input id="m-name" required maxlength="47"></label>
+            <button class="btn primary" type="submit">Register</button>
+          </form>
+        </details>
+      </section>
+    </div>
+
+    <aside class="lens card" aria-labelledby="h-lens">
+      <h2 id="h-lens">Under the hood</h2>
+      <div class="tabs" role="tablist" aria-label="Data structure views">
+        <button role="tab" data-lens="tree" aria-selected="true">Tree</button>
+        <button role="tab" data-lens="hash" aria-selected="false">Hash table</button>
+        <button role="tab" data-lens="queue" aria-selected="false">Waitlist</button>
+        <button role="tab" data-lens="stack" aria-selected="false">History</button>
+      </div>
+      <div id="lens-body" role="tabpanel"></div>
+    </aside>
+  </main>
+
+  <section class="card logcard" aria-labelledby="h-log">
+    <h2 id="h-log">Activity</h2>
+    <ul id="log" class="log" aria-live="polite"></ul>
+  </section>
+
+  <footer class="foot">
+    <p>Dharman Khambhalia (25070721014) · Anshuman Yadav (25070721007) · Data stays in this browser only.</p>
+  </footer>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
