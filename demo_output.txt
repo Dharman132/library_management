@@ -1,0 +1,201 @@
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   Member ID:   Book ID:   Issued "The C Programming Language" to Arjun.
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   Member ID:   Book ID:   No copies available. Use 'Reserve' to join the waitlist.
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   Member ID:   Book ID:   Ram added to waitlist for "The C Programming Language" (position 1).
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   Member ID:   Book ID:   Ravi added to waitlist for "The C Programming Language" (position 2).
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   Book ID:   Waitlist for "The C Programming Language":
+    1. Ram (ID 2)
+    2. Ravi (ID 12)
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   Member ID:   Book ID:   "The C Programming Language" returned by Arjun.
+  Notify: Ram (ID 2) is next in the waitlist.
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   Member ID:   Book ID:   Copy is held for the next member in the waitlist (ID 2).
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   Undid RETURN of "The C Programming Language" by Arjun.
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   Member ID:   Member 1: Arjun  (hash bucket 1)
+  Books issued:
+    - [102] The C Programming Language
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   ID    Title                            Author                 Avail  Waiting
+  ---------------------------------------------------------------------------
+  101   Clean Code                       Robert Martin          1/1   0
+  102   The C Programming Language       Kernighan, Ritchie     0/1   2
+  104   Database System Concepts         Korth                  1/1   0
+  105   Introduction to Algorithms       Cormen et al.          2/2   0
+  108   Discrete Mathematics             Kenneth Rosen          2/2   0
+  110   Data Structures Using C          Reema Thareja          3/3   0
+  112   Operating System Concepts        Silberschatz           2/2   0
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice:   ID    Title                            Author                 Avail  Waiting
+  ---------------------------------------------------------------------------
+  101   Clean Code                       Robert Martin          1/1   0
+  110   Data Structures Using C          Reema Thareja          3/3   0
+  104   Database System Concepts         Korth                  1/1   0
+  108   Discrete Mathematics             Kenneth Rosen          2/2   0
+  105   Introduction to Algorithms       Cormen et al.          2/2   0
+  112   Operating System Concepts        Silberschatz           2/2   0
+  102   The C Programming Language       Kernighan, Ritchie     0/1   2
+
+================ LIBRARY MANAGEMENT SYSTEM ================
+  BOOKS                         MEMBERS
+   1. Add book                   8. Register member
+   2. Remove book                9. View member / issued books
+   3. Search by ID  (BST)
+   4. Search by keyword          TRANSACTIONS
+   5. List all (by ID, inorder) 10. Issue book
+   6. List sorted by title      11. Return book
+      (merge sort)              12. Reserve book (queue)
+   7. View waitlist             13. Undo last transaction (stack)
+                                14. Transaction history
+   0. Exit
+===========================================================
+Choice: Goodbye!
